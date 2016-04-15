@@ -108,7 +108,6 @@ class DotOrg_Plugin_Review {
 	 * Check date on admin initiation and add to admin notice if it was more than the time limit.
 	 */
 	public function check_installation_date() {
-add_action( 'admin_notices', array( $this, 'display_admin_notice' ) );
 
 		if ( true != get_site_option( $this->nobug_option ) ) {
 
