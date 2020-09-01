@@ -115,6 +115,7 @@ class DotOrg_Plugin_Review {
 			$install_date = get_site_option( $this->slug . '-activation-date' );
 			if ( '' == $install_date ) {
 				add_site_option( $this->slug . '-activation-date', time() );
+				$install_date = get_site_option( $this->slug . '-activation-date' );
 			}
 
 			// If difference between install date and now is greater than time limit, then display notice.
